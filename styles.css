@@ -1,0 +1,229 @@
+ 
+ /* Navbar */
+
+.nav-item:hover{
+  background-color: forestgreen;
+  border-radius:5px;
+}
+
+
+
+/* ---------------signup------------------------ */
+
+.main{
+    background-color: rgb(255, 255, 255);
+}
+.mycol{
+    padding-left: 0;
+    padding-right: 0;
+}
+.xcol{
+    padding-left: 50px; 
+    padding-right: 50px;
+}
+
+.form-control{
+    border: none;
+    box-shadow: 0px 0.1px 0px 0px #dae0e5;
+    border-radius: 0;
+}
+.jk,
+.lm{
+    box-shadow: 0px 0.5px 0px 0px #dae0e5!important;
+}
+.form-contro input [type="text"],
+.form-control input [type="email"],
+.form-control input [type="password"]
+{
+    color: black;
+}
+
+.form-control:focus{
+    outline: 0;
+    box-shadow: 0px 0.5px 0px 0px #dae0e5!important;
+}
+
+.form-control-placeholder{
+    position: absolute;
+    top: 0;
+    padding: 7px 0 0 0;
+    transition: all 300ms;
+    opacity: 0.5;
+  
+}
+.form-control:focus+.form-control-placeholder,
+.form-control:valid+.form-control-placeholder {
+    font-size: 80%!important;
+    transform: translate3d(0,-100%,0)!important;
+    opacity: 1!important;
+}
+
+
+.date{
+    border-style: none;
+}
+button.social-signin {
+  margin-bottom: 20px;
+  width: 220px;
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+button.social-signin:hover,
+button.social-signin:focus {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+button.social-signin:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+button.social-signin.facebook {
+  background: #32508E;
+}
+
+button.social-signin.twitter {
+  background: #55ACEE;
+}
+
+button.social-signin.google {
+  background: #DD4B39;
+}
+
+/* ---------------------FAQs------------------------ */
+
+.p{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.accordion {
+position: relative;
+margin: 60px auto;
+width: 80%;
+}
+
+[id*="open-accordion"],[id*="close-accordion"] {
+background:rgb(79, 161, 255);
+border-bottom: 5px solid #fff;
+line-height: 40px;
+height: 40px;
+display: block;
+margin: 0 auto;
+position: relative;
+
+}
+
+[id*="close-accordion"] {
+display: none;
+background:orange;
+}
+
+.accordion a:hover{
+  color:white
+}
+.accordion a {
+color:white;
+font-size: 1.25em;
+font-weight: normal;
+padding-left: 2%;
+text-decoration: none;
+text-shadow: none;
+}
+
+[id*="open-accordion"]:after, [id*="close-accordion"]:after {
+content: "";
+border-left: 10px solid transparent;
+border-right: 10px solid transparent;
+border-top: 10px solid rgba(255, 255, 255, 0.6);
+position: absolute;
+right: 5px;
+top: 15px;
+z-index: 999;
+transform: rotate(-90deg);
+-webkit-transform: rotate(-90deg);
+
+}
+
+.target-fix {
+display: block;
+top: 0;
+left: 0;
+position: fixed;
+}
+
+.accordion-content {
+background: #fff;
+height: 0;
+margin: -1px auto 0;
+padding: 0 2.5%;
+position: relative;
+overflow: hidden;
+width: 90%;
+transition: all 0.1s ease;
+-webkit-transition: all 0.1s ease;
+-moz-transition: all 0.1s ease;
+}
+
+.accordion span:target ~ .accordion-content {
+display: block;
+height: auto;
+padding-bottom: 25px;
+padding-top: 10px;
+}
+
+.accordion span:target ~ [id*="close-accordion"] {
+display: block;
+}
+
+.accordion span:target ~ [id*="open-accordion"] {
+display: none;
+}
+
+.accordion span:target ~ [id*="close-accordion"]:after {
+border-top: 10px solid #333;
+transform: rotate(0deg);
+-webkit-transform: rotate(0deg);
+}
+
+/* ------------------contact us--------------- */
+
+.col-md-3{
+  background: #ff9b00;
+  padding: 4%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.contact-info{
+  margin-top:10%;
+}
+.contact-info img{
+  margin-bottom: 15%;
+}
+.contact-info h2{
+  margin-bottom: 10%;
+}
+.col-md-9{
+  background: #fff;
+  padding: 3%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.contact-form label{
+  font-weight:600;
+}
+.contact-form button{
+  background:forestgreen;
+  color: #fff;
+  font-weight: 600;
+  width: 25%;
+}
+.contact-form button:focus{
+  box-shadow:none;
+}
